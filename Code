@@ -1,0 +1,13 @@
+import sys
+import time
+t = time.perf_counter()
+result = "_" * 100
+print("О чем вы сейчас думаете")
+a = input()
+for i in range(101):
+    
+    result = result.replace("_","|",1)
+    time.sleep(0.1)
+    print(f'{result}     {i}%',end = '\r')
+print()
+print("                               Вы пидорас")
